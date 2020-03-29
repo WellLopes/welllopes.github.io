@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;   
+}
+
+html,
+body,
+a,
+p {
+    height: 100vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+body {
+    background-image: url(/img/background-programming.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* PADRÃO */
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+}
+
+header img {
+    width: 40px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: #E6E7D2;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 17px;
+    transition: all 250ms linear 0s;
+}
+
+header nav ul li a:hover {
+    color: #ffe100;
+}
+header button {
+    box-sizing: none;
+    border: none;
+}
+
+main img {
+    box-sizing: 100px;
+}
+
+main .container p {
+    font-size: 4.8rem;
+    font-weight: bold;
+    color: #E6E7D2;
+}
+main .container {
+    width: 90%;
+    max-width: 980px;
+    margin: auto;
+    
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 0;
+    text-align: center;
+    justify-content: flex-start;
+}
