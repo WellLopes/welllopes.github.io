@@ -2,6 +2,8 @@
 
 
 /* GLOBAL */
+
+/* Reset css */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,8 +34,6 @@ body {
 
 body {
     background-image: url(/img/background-img.png);
-    /* background-image: url(/img/background-programming.png)
-    ; */
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -44,7 +44,7 @@ a {
     list-style-type: none;
 }
 
-/* PADRÃO */
+/* Container */
 
 /* menu-bar */
 header .container {
@@ -55,6 +55,19 @@ header .container {
     width: 90%;
     max-width: 980px;
     margin: auto;
+}
+
+header img {
+    max-width: 100%;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header img:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.15);
 }
 
 header nav ul {
@@ -81,7 +94,8 @@ header button {
     border-radius: 5px;
     box-shadow: 0px 8px 16px #ff272822;
 
-    font-size: 1.7rem;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.8rem;
     font-weight: bold;
 
     width: 100px;
