@@ -42,7 +42,7 @@ body {
 }   
 
 body {
-    background-image: url(/background-img.png);
+    background-image: url(/img/background/background-img.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -379,20 +379,20 @@ footer .social-media ul li a:hover {
     font-weight: bold;
     font-size: 1.4rem;
     
-    color: #272822;
-    border: none;
-
-
-    width: 30%;
+    color: #505248;
     
-    display: grid;
-    height: 2.5rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 
+    width: 30%;    
+    height: 2.5rem;
+    
 }
 
+#modal button:hover {
+
+}
 #modal .content button {
     margin: 0.5rem;
 }
