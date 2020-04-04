@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellerson Lopes</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Wellerson Lopes</title>
    <link rel="stylesheet" href="/css/style.css">
 
 </head>
@@ -37,7 +37,7 @@
                   </a>
                </li>
                <a href="#">
-                  <button>
+                  <button onclick="onOff()" class="contact-header">
                      Contact
                   </button>
                </a>
@@ -76,22 +76,8 @@
       </div>
    </footer>
    
-   <!--Modal-->
-   <!-- <div class="container-modal">  
-      <form action="#" class="form-contact" method="post" tabindex="1">  
-         <input type="text" class="form-contact-input" name="nome" placeholder="Name" required />  
-         
-         <input type="email" class="form-contact-input" name="email" placeholder="E-mail" required />  
-         
-         <input type="tel" class="form-contact-input" name="tel" placeholder="Phone" />  
-         
-         <textarea class="form-contact-textarea" name="conteudo" placeholder="Message" required></textarea>  
-         
-         <button type="submit" class="form-contact-button">Enviar</button>  
-      </form>  
-    </div>   -->
-
-
+   
+   <!-- MODAL -->
    <div id="modal">
       <div class="content">
          <form action="">
@@ -109,13 +95,17 @@
             </div>
 
             <div class="input-wrapper">
-               <textarea name="" class="form-contact-textarea" placeholder="Message" rows="10" cols="30"></textarea>
+               <textarea name="" class="form-contact-textarea" placeholder="Message" rows="8" cols=""></textarea>
             </div>
-            
-            <button type="submit" class="form-contact-button">Enviar</button>
+            <div class="button-footer">
+               <button onclick="onOff()" class="form-contact-button-back">Back</button>
+               
+               <button class="form-contact-button-send">Send</button>
+            </div>            
                
          </form>
       </div>
    </div>
+   <script src="/js/script.js"></script>
 </body>
 </html>
