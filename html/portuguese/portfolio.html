@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Wellerson Lopes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellerson Lopes</title>
    <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/portfolio.css">
 
 </head>
 <body>
@@ -53,18 +54,23 @@
       </div>
    </header>
    
-   <main>
-      <div class="container">
-         <div class="box-photo">
-            <a href="/html/portuguese/sobre-mim.html">
-               <img src="/img/main-principal/perfil-photo.png" alt="Perfil photo">
-            </a>
-         </div>
-         <div>
-            <p>
-               Olá, meu nome é Wellerson Lopes. Eu sou um enstusiásta de linguagens de programação.
-            </p>
-         </div>
+   <main id="port-main">
+      <div class="port-size">
+         <a href="">
+            <img src="/img/projects/calculadora/calculadora-completa.png" alt="Calculator">
+         </a>
+      </div>        
+
+      <div class="port-size">
+         <a href="">
+            <img src="/img/projects/website-fiqueemcasa/fique-em-casa-completo.png" alt="Stay Home">
+         </a>
+      </div>
+
+      <div class="port-size">
+         <a href="">
+            <img src="/img/projects/jogo-da-cobrinha/jogo-da-cobrinha-completo.png" alt="Snake Game">
+         </a>
       </div>
    </main>
 
@@ -81,37 +87,37 @@
          
       </div>
    </footer>
-   
-   
+
    <!-- MODAL -->
    <div id="modal">
-      <div class="content">
-         <form action="">
- 
-            <div class="input-wrapper">
-               <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required> 
-            </div>
-
-            <div class="input-wrapper">
-               <input type="text" name="category" class="form-contact-input" placeholder="Telefone">                
-            </div>
-
-            <div class="input-wrapper">
-               <input type="text" name="title" class="form-contact-input" placeholder="E-mail" required> 
-            </div>
-
-            <div class="input-wrapper">
-               <textarea name="" class="form-contact-textarea" placeholder="Menssagem" rows="8" cols="" required></textarea>
-            </div>
-            <div class="button-footer">
-               <button onclick="onOff()" class="form-contact-button-back">Voltar</button>
-               
-               <button class="form-contact-button-send">Enviar</button>
-            </div>            
-               
-         </form>
-      </div>
+        <div class="content">
+           <form action="">
+   
+              <div class="input-wrapper">
+                 <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required> 
+              </div>
+  
+              <div class="input-wrapper">
+                 <input type="text" name="category" class="form-contact-input" placeholder="Telefone">                
+              </div>
+  
+              <div class="input-wrapper">
+                 <input type="text" name="title" class="form-contact-input" placeholder="E-mail" required> 
+              </div>
+  
+              <div class="input-wrapper">
+                 <textarea name="" class="form-contact-textarea" placeholder="Menssagem" rows="8" cols="" required></textarea>
+              </div>
+              <div class="button-footer">
+                 <button onclick="onOff()" class="form-contact-button-back">Voltar</button>
+                 
+                 <button class="form-contact-button-send">Enviar</button>
+              </div>            
+                 
+           </form>
+        </div>
    </div>
+   
    <script src="/js/script.js"></script>
 </body>
 </html>

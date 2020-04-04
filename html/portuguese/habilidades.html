@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellerson Lopes</title>
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="stylesheet" href="/css/portfolio.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="/html/english/index.html">
+                <img src="/img/header/flag/brazil.png" alt="idioma">
+           </a>
+           <div class="menu-section">
+              <div class="menu-toggle">
+                 <div class="one"></div>
+                 <div class="two"></div>
+                 <div class="three"></div>               
+              </div>
+              <nav>
+                 <ul>
+                    <li>
+                       <a href="/html/portuguese/index-page-br.html">
+                          Início
+                       </a>
+                    </li>
+                    <li>
+                       <a href="/html/portuguese/sobre-mim.html">
+                          Sobre mim
+                       </a>
+                    </li>
+                    <li>
+                       <a href="/html/portuguese/portfolio.html">
+                          Portfólio
+                       </a>
+                    </li>
+                    <li>
+                       <a href="/html/portuguese/habilidades.html">
+                          Habilidades
+                       </a>
+                    </li>
+                    <a href="#">
+                       <button onclick="onOff()" class="contact-header">
+                          Contato
+                       </button>
+                    </a>
+                 </ul>
+              </nav>
+           </div>
+        </div>
+    </header>
+   
+   <main id="skills-main">
+      <div class="card">
+         <img src="/img/skills/html/html-complete.png" alt="">
+      </div>
+
+      <div class="card">
+         <img src="/img/skills/css/css-complete.png" alt="">
+      </div>
+         
+      <div class="card">
+         <img src="/img/skills/js/js-complete.png" alt="">
+      </div>
+
+      <div class="card">
+         <img src="/img/skills/git/git-complete.png" alt="">
+      </div>
+   </main>
+
+   <footer>
+      <div class="social-media">
+
+         <a href="https://github.com/WellLopes" target="_blank" class="github">
+            <img src="/img/footer/github-image 1.png" alt="Github">
+         </a>
+      
+         <a href="https://www.linkedin.com/in/welllopes" target="_blank" class="linkedin">
+            <img src="/img/footer/linkedin-circle 1.png" alt="Linkedin">
+         </a>
+         
+      </div>
+   </footer>
+
+   <!-- MODAL -->
+   <div id="modal">
+    <div class="content">
+       <form action="">
+
+          <div class="input-wrapper">
+             <input type="text" class="form-contact-input" name="nome" placeholder="Nome" required> 
+          </div>
+
+          <div class="input-wrapper">
+             <input type="text" name="category" class="form-contact-input" placeholder="Telefone">                
+          </div>
+
+          <div class="input-wrapper">
+             <input type="text" name="title" class="form-contact-input" placeholder="E-mail" required> 
+          </div>
+
+          <div class="input-wrapper">
+             <textarea name="" class="form-contact-textarea" placeholder="Menssagem" rows="8" cols="" required></textarea>
+          </div>
+          <div class="button-footer">
+             <button onclick="onOff()" class="form-contact-button-back">Voltar</button>
+             
+             <button class="form-contact-button-send">Enviar</button>
+          </div>            
+             
+       </form>
+    </div>
+   </div>
+   
+   <script src="/js/script.js"></script>
+</body>
+</html>
