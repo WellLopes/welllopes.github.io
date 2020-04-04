@@ -14,36 +14,42 @@
          <a href="/html/portuguese/index-page-br.html">
             <img src="/img/header/flag/united-states.png" alt="idioma">
          </a>
-         <nav>
-            <ul>
-               <li>
-                  <a href="/html/english/index.html">
-                     Home
+         <div class="menu-section">
+            <div class="menu-toggle">
+               <div class="one"></div>
+               <div class="two"></div>
+               <div class="three"></div>               
+            </div>
+            <nav>
+               <ul>
+                  <li>
+                     <a href="/html/english/index.html">
+                        Home
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/html/english/about-me.html">
+                        About me
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/html/english/portfolio.html">
+                        Portfolio
+                     </a>
+                  </li>
+                  <li>
+                     <a href="/html/english/skills.html">
+                        Skills
+                     </a>
+                  </li>
+                  <a href="#">
+                     <button onclick="onOff()" class="contact-header">
+                        Contact
+                     </button>
                   </a>
-               </li>
-               <li>
-                  <a href="/html/english/about-me.html">
-                     About me
-                  </a>
-               </li>
-               <li>
-                  <a href="/html/english/portfolio.html">
-                     Portfolio
-                  </a>
-               </li>
-               <li>
-                  <a href="">
-                     Skills
-                  </a>
-               </li>
-               <a href="#">
-                  <button>
-                     Contact
-                  </button>
-               </a>
-            </ul>
-            
-         </nav>
+               </ul>
+            </nav>
+         </div>
       </div>
    </header>
    
@@ -60,16 +66,46 @@
    <footer>
       <div class="social-media">
 
-         <a href="" class="github">
+         <a href="https://github.com/WellLopes" target="_blank" class="github">
             <img src="/img/footer/github-image 1.png" alt="Github">
          </a>
       
-         <a href="" class="linkedin">
+         <a href="https://www.linkedin.com/in/welllopes" target="_blank" class="linkedin">
             <img src="/img/footer/linkedin-circle 1.png" alt="Linkedin">
          </a>
          
       </div>
    </footer>
 
+   <div id="modal">
+      <div class="content">
+         <form action="">
+ 
+            <div class="input-wrapper">
+               <input type="text" class="form-contact-input" name="nome" placeholder="Name" required> 
+            </div>
+
+            <div class="input-wrapper">
+               <input type="text" name="category" class="form-contact-input" placeholder="Phone">                
+            </div>
+
+            <div class="input-wrapper">
+               <input type="text" name="title" class="form-contact-input" placeholder="E-mail" required> 
+            </div>
+
+            <div class="input-wrapper">
+               <textarea name="" class="form-contact-textarea" placeholder="Message" rows="8" cols="" required></textarea>
+            </div>
+            <div class="button-footer">
+               <button onclick="onOff()" class="form-contact-button-back">Back</button>
+               
+               <button class="form-contact-button-send">Send</button>
+            </div>            
+               
+         </form>
+      </div>
+   </div>
+
+   <script src="/js/script.js"></script>
 </body>
 </html>
