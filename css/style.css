@@ -8,6 +8,18 @@
         opacity: 1;
     }
 }
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /* Reset css */
 * {
     box-sizing: border-box;
@@ -67,6 +79,11 @@ header .container {
 }
 
 header img {
+    width: 4.0rem;
+    height: 4.0rem;
+}
+
+header img {
     max-width: 100%;
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.3s;
@@ -100,15 +117,15 @@ header nav ul li a:hover {
 header button {
     background-color: #ffe100;
     border: none;
-    border-radius: 5px;
-    box-shadow: 0px 8px 16px #ff272822;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.8rem 1.6rem #ff272822;
 
     font-family: 'Inconsolata', monospace;
     font-size: 1.8rem;
     font-weight: bold;
 
-    width: 100px;
-    height: 25px;
+    width: 10.0rem;
+    height: 2.5rem;
 }
 
 
@@ -127,13 +144,26 @@ main .container p {
     color: #E6E7D2;
 }
 
+.box-photo img {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+
+    width: 15rem;
+    height: 15rem;
+
+    border: none;
+}
+
 main .box-photo {
+    
+    width: 16rem;
+    height: 16rem;
+    border-radius: 10rem;
 
-    width: 200px;
-    height: 190px;
-    border-radius: 500px;
-
-    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, .3);
+    box-shadow: 0 0.4rem 1.6rem -0.8rem rgba(1, 1, 1, .3);
     
     background-color: #E6E7D2;
     opacity: 1;
@@ -178,6 +208,10 @@ footer .social-media {
     margin: auto;
 }
 
+footer .social-media img {
+    width: 3.0rem;
+    height: 3.0rem;
+}
 footer .social-media img {
     max-width: 100%;
     -moz-transition: all 0.3s;
@@ -249,10 +283,10 @@ footer .social-media ul li a:hover {
     transform: translate(-50%, -50%);
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    padding: 3.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-gap: 1.0rem;
+    
+    padding: 3.5rem;
     
     justify-content: space-evenly;
     
@@ -263,7 +297,7 @@ footer .social-media ul li a:hover {
     width: 100%;
 
     box-sizing: border-box;
-    box-shadow: 0 4px 16px -8px rgba(1, 1, 1, .3);
+    box-shadow: 0 0.4rem 1.6rem -0.8rem rgba(1, 1, 1, .3);
 
     max-width: 100%;
     -moz-transition: all 0.3s;
@@ -285,20 +319,29 @@ footer .social-media ul li a:hover {
     width: 90%;    
     max-width: 980px;
 
-    margin: 0 auto;
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
-    justify-items: center;
+    grid-gap: 1.0rem;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
     align-items: center;
+    justify-content: center;
+}
 
+#skills-main img {
+    width: 18rem;
+    height: 18rem;
 }
 
 #skills-main img {
@@ -315,32 +358,41 @@ footer .social-media ul li a:hover {
 }
 
 /* MODAL */
-
 #modal {
-    display: grid;
+    animation-name: modal;
+    animation-duration:  0.3s;
 
-    background: #3591F6;
-    position: absolute;
+    height: 100vh;
+    width: 100vw;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
 
+    z-index: 2000;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
     border-radius: 1.3rem;
 }
 
 #modal .content {
+    background: #3591F6;
     color: #E6E7D2;
-    font-weight: bold;
-    margin: 1.0rem;
-}
+    
+    width: 60%;
+    max-width: 30.0rem;
 
-#modal form {
+    font-weight: bold;
+
+    padding: 1.0rem;
+    border-radius: 1.0rem;
 }
 
 #modal .input-wrapper {
     width: 100%;
-    /* margin: 0 auto; */
     padding: 1.0rem;
 }
 
@@ -351,9 +403,9 @@ footer .social-media ul li a:hover {
     
     padding: 1.0rem;
 
-    font-weight: bold;
     font-family: 'Inconsolata', monospace;
-    color: #3591F6;
+    font-size: 1.4rem;
+    font-weight: bold;
 
     border: none;
     border-radius: 0.8rem;
@@ -362,9 +414,9 @@ footer .social-media ul li a:hover {
 
 #modal .form-contact-textarea {
 
+    width: 100%;
     padding: 1.0rem;
     
-    color: #3591F6;
     font-family: 'Inconsolata', monospace;
     font-size: 1.4rem;
     font-weight: bold;
@@ -387,80 +439,37 @@ footer .social-media ul li a:hover {
 
     width: 30%;    
     height: 2.5rem;
-    
+
+}
+
+#modal .button-footer {
+
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #modal button:hover {
-
+    color: #272822;    
+    background: #ffe100;
+    transition: all 0.4s ease-out;
 }
+
 #modal .content button {
     margin: 0.5rem;
 }
 
+#modal.show {
+    display: flex;
+}
 
-/* .container-modal {
-    width: 50%;
-    margin: 0 auto;
-  }
-  
-  .form-contact {
-    width: 100%;
-    font-family: "Arial", Times, serif;
-  }
-  
-  .form-contact-input {
-    width: 100%;
-    color: #292929;
-    font-size: 18px;
-    background-color: #E9E9E9;
-    border: 1px solid #E9E9E9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    height: 40px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-indent: 20px;
-  }
-  
-  .form-contact-textarea {
-    width: 100%;
-    color: #292929;
-    font-size: 18px;
-    background-color: #E9E9E9;
-    border: 1px solid #E9E9E9;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    height: 200px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    text-indent: 20px;
-    padding-top: 16px;
-    padding-left: 0;
-    padding-right: 0;
-    font-family: "Arial", Times, serif;
-  }
-  
-  .form-contact-button {
-    width: 100%;
-    font-size: 18px;
-    border-radius: 4px;
-    color: #fff;
-    height: 40px;
-    opacity: .8;
-    margin-bottom: 20px;
-    cursor: pointer;
-    background: #B22222;
-    display: block;
-    border: none;
-    border-bottom: 1px solid #500707;
-    border-right: 1px solid #500707;
-    transition: 1s;
-  }
-  
-  .form-contact-button:hover {
-    opacity: 1;
-  } */
+
+/* Resposive Screen */
+@media (max-width: 1366px) {
+
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+
+}
