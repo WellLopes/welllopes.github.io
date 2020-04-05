@@ -1,13 +1,13 @@
-# This is my portfolio website
+## Portfolio website
 
-## Things i learned when create this website:
+### Things i learned when create this website:
 
  * Knowledge whitout practice is nothing
  * Fragment the problems and solve them in parts.
+
 ### Tech used in this project:
 
- * Html
- * Css
- * JS
+ * `HTML`
+ * `CSS`
+ * `JavaScript`
 
- `Still under construction`
