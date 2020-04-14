@@ -30,10 +30,13 @@
 
 /* GLOBAL */
 
+main {
+    animation-name: fade;
+    animation-duration: 0.7s;
+}
+
 html {
     font-size: 62.5%;
-    animation-name: fade;
-    animation-duration: 0.5s;
 }
 
 html,
@@ -295,13 +298,13 @@ footer .social-media ul li a:hover {
 
 #port-main .port-size {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #port-main img {
+    width: 40rem;
     height: 20.0rem;
 
     box-sizing: border-box;
@@ -333,7 +336,7 @@ footer .social-media ul li a:hover {
     transform: translate(-50%, -50%);
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
     grid-gap: 7.0rem;
 }
@@ -344,11 +347,12 @@ footer .social-media ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 #skills-main img {
-    width: 18rem;
-    height: 18rem;
+    width: 14rem;
+    height: 14rem;
 }
 
 #skills-main img {
@@ -500,11 +504,11 @@ footer .social-media ul li a:hover {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 511px) {
     /* Portfolio */
     #port-main img {
-        width: 35rem;
-        height: 18rem;
+        width: 30rem;
+        height: 14rem;
     }
 
     /* Skills */
@@ -647,6 +651,9 @@ footer .social-media ul li a:hover {
 
 }
 
-@media (max-width: 320px) {
-
+@media (max-width: 425px) {
+    #skills-main img {
+        width: 16rem;
+        height: 16rem;
+    }
 }
